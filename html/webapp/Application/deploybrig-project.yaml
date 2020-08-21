@@ -1,6 +1,6 @@
 project: "deployment"
 repository: "github.com/kartikeya390/deploy.git"
 cloneURL: "https://github.com/kartikeya390/deploy.git"
-sharedSecret: "DEPLOYMENT"
+sharedSecret: "qwidhiqhdpiqhiqhdqhq"
 github:
     token: "9c6299451c31ab76792ba2d642ffa5c189b540a2"
