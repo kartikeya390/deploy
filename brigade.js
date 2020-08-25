@@ -5,17 +5,21 @@ events.on("exec", function(e, project) {
 
   // Create a new job
    var docker = new Job("job2" , "docker:dind");
+   
     docker.privileged = true;
     docker.env = {
     DOCKER_DRIVER: "overlay"
     };
+  docker.env.DOCKER_USER = project.secrets.dockerLogin
+  docker.env.DOCKER_PASS = project.secrets.dockerPass
 
   docker.tasks = [
     "dockerd-entrypoint.sh &",
     "sleep 10",
-    "ls -lart",
-    "pwd",
-    "docker build -t kartikeya390/dockerdeploy:v4 .",
+    "cd src",
+    "docker build -t kartikeya390/dockerdeploy:v6 .",
+    "docker login docker.io -u $DOCKER_USER -p $DOCKER_PASS",
+    "docker push kartikeya390/dockerdeploy:v6",
     "docker images"
 ]
 

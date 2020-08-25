@@ -3,4 +3,7 @@ repository: "github.com/kartikeya390/deploy.git"
 cloneURL: "https://github.com/kartikeya390/deploy.git"
 sharedSecret: "qwidhiqhdpiqhiqhdqhq"
 github:
-    token: "9c6299451c31ab76792ba2d642ffa5c189b540a2"
+  token: "9c6299451c31ab76792ba2d642ffa5c189b540a2"
+secrets:
+  dockerPass: Abcd@1234
+  dockerLogin: kartikeya390
