@@ -17,9 +17,9 @@ events.on("exec", function(e, project) {
     "dockerd-entrypoint.sh &",
     "sleep 10",
     "cd src",
-    "docker build -t kartikeya390/dockerdeploy:v6 .",
+    "docker build -t kartikeya390/dockerdeploy:v7 .",
     "docker login docker.io -u $DOCKER_USER -p $DOCKER_PASS",
-    "docker push kartikeya390/dockerdeploy:v6",
+    "docker push kartikeya390/dockerdeploy:v7",
     "docker images"
 ]
 
