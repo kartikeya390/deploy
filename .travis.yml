@@ -1,0 +1,12 @@
+language : node_js
+
+node_js =
+       -11.6.0
+
+install:
+      -php install
+
+deploy:
+     provide : pages
+     on:  
+       branch: devops
