@@ -8,4 +8,4 @@ install:
 deploy:
      provide : pages
      on:  
-       branch: devops
+       branch: deploy
