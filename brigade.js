@@ -20,6 +20,9 @@ events.on("exec", function(e, project) {
     "docker build -t kartikeya390/dockerdeploy:Latest1 .",
     "docker login docker.io -u $DOCKER_USER -p $DOCKER_PASS",
     "docker push kartikeya390/dockerdeploy:Latest1",
+    "https://get.helm.sh/helm-v3.3.1-linux-amd64.tar.gz"
+    "tar xvzf helm-v3.3.1-linux-amd64.tar.gz"
+    
     "docker images"
 ]
 
